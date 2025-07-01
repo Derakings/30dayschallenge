@@ -1,0 +1,17 @@
+.terraform/
+*.tfstate
+*.tfstate.backup
+crash.log
+terraform.tfvars
+override.tf
+.terraform.lock.hcl
+
+
+# OS/system files
+.DS_Store
+Thumbs.db
+*.log
+
+# Large binaries
+*.zip
+*.exe
