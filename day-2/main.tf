@@ -11,10 +11,10 @@ resource "aws_instance" "ubuntu_server" {
 
   user_data = <<-EOF
               #!/bin/bash
-              sudo apt update -y
-              sudo apt install nginx -y
-              sudo systemctl enable nginx
+              sudo apt-get update -y
+              sudo apt-get install -y nginx
               sudo systemctl start nginx
+              sudo systemctl enable nginx
               EOF
 
   tags = {
